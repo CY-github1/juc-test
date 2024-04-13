@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cy</groupId>
-    <artifactId>juc-test</artifactId>
+    <artifactId>juc-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>juc-test</name>
     <description>juc-test</description>

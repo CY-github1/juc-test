@@ -22,14 +22,14 @@ public class FutureTaskTest {
         });
         threadPool.submit(new Thread(futureTask1,"AA"));
 
-        FutureTask<String> futureTask2 = new FutureTask<String>(new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                TimeUnit.SECONDS.sleep(2);
-                return "线程:【" + Thread.currentThread().getName() + "】执行task2";
-            }
-        });
-        threadPool.submit(new Thread(futureTask2,"BB"));
+//        FutureTask<String> futureTask2 = new FutureTask<String>(new Callable<String>() {
+//            @Override
+//            public String call() throws Exception {
+//                TimeUnit.SECONDS.sleep(2);
+//                return "线程:【" + Thread.currentThread().getName() + "】执行task2";
+//            }
+//        });
+//        threadPool.submit(new Thread(futureTask2,"BB"));
 
 
         try {
@@ -37,6 +37,7 @@ public class FutureTaskTest {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
 
         int count = 5;
         while (true){
@@ -53,7 +54,7 @@ public class FutureTaskTest {
             }
         }
         System.out.println("--------------");
-        System.out.println(futureTask2.get());
+//        System.out.println(futureTask2.get());
 
 
         long end = System.currentTimeMillis();

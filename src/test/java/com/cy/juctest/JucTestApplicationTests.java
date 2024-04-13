@@ -8,6 +8,7 @@ class JucTestApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("mysql".charAt(0) + 1);
     }
 
 }
